@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">RecetteApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!--<string name="hello_blank_fragment">Hello blank fragment</string>-->
+    <string name="dessertsBoutonText">Desserts</string>
+    <string name="boissonsBoutonText">Boissons</string>
+    <string name="aperosBoutonText">Aperos</string>
+    <string name="platsBoutonText">Plats</string>
+    <string name="entreesBoutonText">Entrees</string>
+    <string name="petit_dejBoutonText">Petit-dej</string>
+    <string name="parametresTitreText">PARAMETRES</string>
+    <string name="make_text_biggerSwitchText">Agrandir le texte</string>
+    <string name="dark_modeSwitchText">Mode Nuit</string>
+    <string name="remove_personnal_recipesBoutonText">Enlever tes recettes</string>
+    <string-array name="types">
+        <item>Petit-déjeuner</item>
+        <item>Entrée</item>
+        <item>Plat</item>
+        <item>Apero</item>
+        <item>Boissons</item>
+        <item>Desserts</item>
+    </string-array>
+    <string-array name="langues">
+        <item>Français</item>
+        <item>English</item>
+        <item>Deutsch</item>
+        <item>Afrikaans</item>
+    </string-array>
+</resources>

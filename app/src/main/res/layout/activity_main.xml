@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="224dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:elevation="2dp"
+        android:padding="8dp"
+        android:background="@drawable/search_style"
+        android:iconifiedByDefault="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/searchView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <ImageView
+        android:id="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/searchView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+        <HorizontalScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/scroll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/petitdej"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/sort_button_top_home"
+                    android:fontFamily="@font/morning"
+                    android:text="@string/petit_dejBoutonText"
+                    android:textColor="@color/rouge" />
+
+                <Button
+                    android:id="@+id/entrees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/sort_button_top_home"
+                    android:text="@string/entreesBoutonText"
+                    android:textColor="@color/rouge" />
+
+                <Button
+                    android:id="@+id/plats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/sort_button_top_home"
+                    android:textColor="@color/rouge"
+                    android:text="@string/platsBoutonText" />
+
+                <Button
+                    android:id="@+id/aperos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/sort_button_top_home"
+                    android:textColor="@color/rouge"
+                    android:text="@string/aperosBoutonText" />
+
+                <Button
+                    android:id="@+id/boissons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/sort_button_top_home"
+                    android:textColor="@color/rouge"
+                    android:text="@string/boissonsBoutonText" />
+
+                <Button
+                    android:id="@+id/desserts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/sort_button_top_home"
+                    android:textColor="@color/rouge"
+                    android:text="@string/dessertsBoutonText" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="618dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+        <ScrollView
+            android:id="@+id/scroll_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/scroll_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:id="@+id/scroll_layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:text="Button7"
+                        android:id="@+id/button7"
+                        android:background="#0058b6"
+                        />
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:text="Button8"
+                        android:id="@+id/button8"
+                        android:background="#0058b6"
+                        android:layout_marginLeft="50dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/scroll_layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="#0058b6"
+                        android:text="Button7" />
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:text="Button8"
+                        android:id="@+id/button8"
+                        android:background="#0058b6"
+                        android:layout_marginLeft="50dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/scroll_layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:text="Button7"
+                        android:id="@+id/button7"
+                        android:background="#0058b6"
+                        />
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/button8"
+                        android:text="Button8"
+                        android:background="#0058b6"
+                        android:layout_marginLeft="50dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/scroll_layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:text="Button7"
+                        android:id="@+id/button7"
+                        android:background="#0058b6"
+                        />
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:text="Button8"
+                        android:id="@+id/button8"
+                        android:background="#0058b6"
+                        android:layout_marginLeft="50dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/scroll_layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:text="Button7"
+                        android:id="@+id/button7"
+                        android:background="#0058b6"
+                        />
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:text="Button8"
+                        android:id="@+id/button8"
+                        android:background="#0058b6"
+                        android:layout_marginLeft="50dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

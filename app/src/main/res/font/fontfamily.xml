@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/ariana_violeta" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/freedom" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/short_baby" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/lobster" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/morn_thin" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/morning" />
+</font-family>

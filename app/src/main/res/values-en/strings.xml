@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CookingApp</string>
+    <string name="boissonsBoutonText">Drinks</string>
+    <string name="aperosBoutonText">Appetizers</string>
+    <string name="platsBoutonText">Dishes</string>
+    <string name="entreesBoutonText">Starters</string>
+    <string name="petit_dejBoutonText">Breakfast</string>
+    <string name="dessertsBoutonText">Deserts</string>
+    <string name="parametresTitreText">OPTIONS</string>
+    <string name="make_text_biggerSwitchText">Make text bigger</string>
+    <string name="dark_modeSwitchText">Dark Mode</string>
+    <string name="remove_personnal_recipesBoutonText">Remove personnal recipes</string>
+</resources>
