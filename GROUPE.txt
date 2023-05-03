@@ -1,0 +1,5 @@
+Groupe : David ROSSIG & Guillaume LEFORMAL
+
+Application : App de recette : ajout de recette, design "pastel", options et autres...
+
+Terminé le 03/05/2023
