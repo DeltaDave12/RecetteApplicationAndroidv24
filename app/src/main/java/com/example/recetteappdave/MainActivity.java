@@ -9,11 +9,14 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.SearchView;
 import android.widget.Spinner;
 import android.widget.Button;
 
+import java.util.ArrayList;
 import java.util.Locale;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity  {
 
@@ -27,6 +30,7 @@ public class MainActivity extends AppCompatActivity  {
     Button aperosButton;
     Button boissonsButton;
     Button dessertsButton;
+    List<Item> itemList;
 
     boolean petitdejButtonState = false;
     boolean entreesButtonState = false;
@@ -53,8 +57,24 @@ public class MainActivity extends AppCompatActivity  {
         aperosButton = findViewById(R.id.aperos);
         boissonsButton = findViewById(R.id.boissons);
         dessertsButton = findViewById(R.id.desserts);
+        itemList = new ArrayList<>();
+        LinearLayout linearLayout = findViewById(R.id.scroll_layout3);
+        //add data Items
+        itemList.add(new Item("Poulet Curry", R.drawable.image_recette_1));
+        itemList.add(new Item("Gratin d'auphinois", R.drawable.image_recette_2));
+        itemList.add(new Item("Roti aux haricots", R.drawable.image_recette_3));
+        itemList.add(new Item(" Patates Douce", R.drawable.image_recette_4));
+        itemList.add(new Item(" Burger", R.drawable.image_recette_5));
+        itemList.add(new Item("Saumon cuit au four", R.drawable.image_recette_6));
+        itemList.add(new Item("Sushis maison", R.drawable.image_recette_7));
+        itemList.add(new Item("Gateau chocolat", R.drawable.image_recette_8));
+        itemList.add(new Item("Pâtes lardons", R.drawable.image_recette_9));
+        itemList.add(new Item("Tiramisu aux fraises", R.drawable.image_recette_10));
 
-
+        //ref itemxml.xml
+        ItemView itemView = new ItemView(this);
+        itemView.setItem(itemList.get(0));
+        linearLayout.addView(itemView);
 
         //onclick buttons
         addref.setOnClickListener(new View.OnClickListener() {

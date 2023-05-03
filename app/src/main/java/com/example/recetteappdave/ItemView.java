@@ -31,8 +31,8 @@ public class ItemView extends LinearLayout {
         LayoutInflater inflater = LayoutInflater.from(getContext());
         //button id 7 et 9 commme imageView et textView
         View view = inflater.inflate(R.layout.itemxml, this, true);
-        imageView = view.findViewById(R.id.button7img);
-        textView = view.findViewById(R.id.button8text);
+        imageView = view.findViewById(R.id.itemImage);
+        textView = view.findViewById(R.id.itemName);
     }
 
     public void setItem(Item item) {

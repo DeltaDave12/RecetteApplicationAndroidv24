@@ -10,21 +10,16 @@
         android:id="@+id/itemImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/default_image" />
+        android:src="@drawable/image_recette_1" />
 
     <TextView
         android:id="@+id/itemName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/default_name"
+        android:text="description première recette"
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/itemButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/default_button" />
 
 </LinearLayout>
