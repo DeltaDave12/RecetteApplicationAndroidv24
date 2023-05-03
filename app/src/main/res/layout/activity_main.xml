@@ -152,14 +152,14 @@
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:text="Button7"
-                        android:id="@+id/button7"
+                        android:id="@+id/button7img"
                         android:background="#0058b6"
                         />
                     <Button
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:text="Button8"
-                        android:id="@+id/button8"
+                        android:id="@+id/button8text"
                         android:background="#0058b6"
                         android:layout_marginLeft="50dp"/>
                 </LinearLayout>
